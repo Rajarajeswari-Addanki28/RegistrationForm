@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">RegistrationForm</string>
+    <string-array name="Year">
+        <item>--select your year----</item>
+        <item>PUC1</item>
+        <item>PUC@</item>
+        <item>E1</item>
+        <item>E2</item>
+        <item>E3</item>
+        <item>E4</item>
+    </string-array>
+    <string-array name="Brach">
+        <item>SELECT YOYR BRANCH</item>
+        <item>CSE</item>
+        <item>ECE</item>
+        <item>MECH</item>
+        <item>CIVIL</item>
+        <item>CHE</item>
+        <item>MME</item>
+
+    </string-array>
+</resources>

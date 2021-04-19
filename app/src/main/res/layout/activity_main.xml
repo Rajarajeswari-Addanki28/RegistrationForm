@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/text"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="2"
+        android:fontFamily="cursive"
+        android:gravity="center"
+        android:text="REGISTRATION FORM"
+        android:textColor="#000000"
+        android:textSize="30dp"
+
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/name"
+        android:hint="Enter Your Name" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:id="@+id/email"
+        android:gravity="center"
+        android:hint="Enter Your Email" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@drawable/shape"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:id="@+id/password"
+        android:hint="Enter Your Password"
+        android:inputType="textPassword"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:id="@+id/number"
+        android:layout_weight="1"
+        android:hint="Enter Your Number"
+        android:inputType="number"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:id="@+id/year"
+        android:background="@drawable/shape"
+        android:layout_weight="1"
+        android:entries="@array/Year"/>
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="45dp"
+        android:layout_weight="1"
+        android:entries="@array/Brach"
+        android:background="@drawable/shape"
+        android:id="@+id/branch"/>
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="Gender"
+        android:background="@drawable/shape"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:textSize="20dp" />
+
+   <RadioGroup
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal"
+       android:id="@+id/rg">
+
+       <RadioButton
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginRight="40dp"
+           android:text="Male"
+           android:textSize="24dp"
+           android:textStyle="bold"
+           android:id="@+id/male"/>
+
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:id="@+id/female"/>
+
+   </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:layout_marginTop="4dp"
+        android:text="select Language"
+        android:layout_weight="1"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:layout_width="123dp"
+        android:layout_height="54dp"
+        android:text="Telugu"
+        android:layout_weight="1"
+        android:id="@+id/tel"
+        android:textSize="24dp" />
+
+    <CheckBox
+        android:layout_width="123dp"
+        android:layout_height="54dp"
+        android:text="English"
+        android:layout_weight="1"
+        android:id="@+id/eng"
+        android:textSize="24dp" />
+
+    <CheckBox
+        android:layout_width="123dp"
+        android:layout_height="54dp"
+        android:text="Hindi"
+        android:id="@+id/hin"
+        android:layout_weight="1"
+        android:textSize="24dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:onClick="register"
+        android:background="@drawable/shape"
+        android:text="Register" />
+
+</LinearLayout>
+</ScrollView>
